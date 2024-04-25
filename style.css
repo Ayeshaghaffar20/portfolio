@@ -281,6 +281,134 @@ body::before{
     justify-content: space-around;
     align-items: center;
 }
+.skills-bar{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.skills-bar h1{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "poppins-light";
+    color: #fff;
+
+}
+
+.skill{
+    line-height: 3.5vw;
+    margin-top: 3%;
+}
+
+.skill p{
+    color: #fff;
+    font-family: "poppins-light";
+    font-size: 18px;
+}
+
+.meter {
+    height: 20px;
+    position: relative;
+    background: #f3efef;
+    border-radius: 25px;
+}
+
+.meter>span {
+    display: block;
+    height: 100%;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background-color: #aaa5ff;
+    position: relative;
+    overflow: hidden;
+
+
+}
+
+  /* Add animation classes for each span */
+    .meter > .span1 {
+        animation: fillWidth1 2s ease forwards;
+    }
+
+    .meter > .span2 {
+        animation: fillWidth2 3s ease forwards;
+    }
+
+    .meter > .span3 {
+        animation: fillWidth3 4s ease forwards;
+    }
+
+    @keyframes fillWidth1 {
+        0% { width: 0%; }
+        100% { width: 95%; }
+    }
+
+    @keyframes fillWidth2 {
+        0% { width: 0%; }
+        100% { width: 70%; }
+    }
+
+    @keyframes fillWidth3 {
+        0% { width: 0%; }
+        100% { width: 60%; }
+    }
+
+.education-section{
+    margin-top: 10%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}  
+
+.education-section h2{
+    font-size: 35px;
+    font-weight: 500;
+    color: #fff;
+    font-family: "poppins-light";
+}
+
+.edu-img img{
+    border-radius: 50%;
+    object-fit: cover;
+    width: 4rem;
+    height: 4rem;
+            margin-bottom: .5rem;
+        margin-right: 0;
+}
+
+.education-section p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 400;
+     font-family: "poppins-light";
+     margin-top: 10px;
+}
+
+.education-section span{
+    font-weight: 600;
+}
+
+.horizontal-line {
+        display: block;
+        height: 2px;
+        width: 80%; /* Initial width */
+        background-color:#a9a7f9;;
+        margin-top: 1rem;
+        transition: width 0.3s ease; /* Add smooth transition */
+        display: flex;
+    }
+
+    .education-section:hover .horizontal-line {
+        width: 100%; /* Expand to 100% width on hover */
+    }
+
+
+
+
+
+
 
 @media screen and (max-width:992px) {
     .hero-section{
@@ -304,6 +432,31 @@ body::before{
     }
     .btn{
         justify-content: center;
+    }
+
+    .skills-bar h1{
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .edu-img{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .horizontal-line{
+        align-items: center;
+        justify-content: center;
+    }
+
+    .education-section{
+        text-align: center;
+    }
+    
+    .education-section h2{
+        font-size: 28px;
+        text-align: center;
     }
 }
 
