@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="bootstrap.css">
     <script src="bootstrap.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -41,10 +42,12 @@
     <section class="container hero" >
         <div class="row hero-section">
             <div class="col-12 col-md-6">
-                <div class="left-section">
+                <div class="left-section" data-aos="fade-right"
+                 data-aos-delay="50"
+                data-aos-duration="1000">
                      <h1>Hi, I'm Ayesha <span class="shaking-hand">👋</span></h1>
                    <div class="hero-para">
-                      <p>A passionate Full Stack Software Developer 🚀 having an experience of building Web and Mobile applications with JavaScript / Reactjs / Nodejs / React Native and some other cool libraries and frameworks.</p>
+                      <p>A dynamic Full Stack Software Developer 🚀 proficient in crafting Web and Mobile applications using JavaScript, React.js, Node.js, and React Native, along with various innovative libraries and frameworks.</p>
                    </div>
                      <div class="icons">
                         <i class="fa-brands fa-facebook facebook"></i>
@@ -62,7 +65,7 @@
                         <div class="right-section">
                           <div class="hero-card">
                             <div class="content">
-                              <div class="imgbx"><img src="assets/images/54636258.jpg" alt=""></div>
+                              <div class="imgbx"><img src="assets/images/hero-img.webp" alt=""></div>
                               <div class="contentbx">
                                 <h3>Ayesha <br><span>Web Designer</span></h3>
                               </div>
@@ -88,7 +91,9 @@
 
     </section>
     <section class="container">
-      <div class="skills-bar">
+      <div class="skills-bar" data-aos="fade-down"
+                 data-aos-delay="50"
+                data-aos-duration="1000">
         <h1>Proficiency</h1>
         <div class="skill">
           <p>Frontend/Design</p>
@@ -112,7 +117,9 @@
     </section>
 
     <section class="container">
-      <div class="education-section">
+      <div class="education-section"data-aos="fade-down"
+                 data-aos-delay="50"
+                data-aos-duration="1000">
         <h2>Education</h2>
         <div class="edu-img">
           <img src="assets/images/vu.7371f9ab.jpeg" alt="" class="edu">
@@ -124,6 +131,7 @@
       </div>
       
     </section>
+     
     <script type="text/javascript" src="vanilla-tilt.js"></script>
     <script>
       VanillaTilt.init(document.querySelector(".hero-card"),{
@@ -137,5 +145,6 @@
   <script>
     AOS.init();
   </script>
+   
 </body>
 </html>
