@@ -413,8 +413,110 @@ body::before{
         width: 100%; /* Expand to 100% width on hover */
     }
 
+    /* .cards-section{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    } */
+
+ .ex{
+    --global-font: "poppins-light";
+    font-weight: 500;
+    font-size: 40px;
+    color: #fff;
+    margin-bottom: 20px;
 
 
+ }   
+
+    .card{
+    height: 450px;
+    width: 100%;
+     border-top:1px solid rgba(255, 255, 255, 0.5) ;
+    border-left:1px solid rgba(255, 255, 255, 0.5) ; 
+     border-right:1px solid rgba(255, 255, 255, 0.5) ;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.1) ;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    /* margin-top: 15%; */
+    transition: 0.5s;
+    margin-top: 10%;
+     box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.5);
+     z-index: 1;
+    }
+
+.upper-section{
+    height: 190px;
+    background-color: #161623;
+    /* box-shadow: inset 10px 10px 10px rgba(0, 0, 0, 0.4); */
+    /* border-bottom:1px solid rgba(255, 255, 255, 0.5) ;  */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+}    
+
+.upper-section img{
+    height: 100px;
+    width: 100px;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 133px;
+
+
+}
+
+.upper-section h3{
+    --global-font: "poppins-light";
+    font-size: 30px;
+    font-weight: 600;
+    color:#CCCCCC; ;
+}
+
+.lower-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px 40px;
+    margin-top: 65px;
+    text-align: center;
+}
+
+.lower-section h4{
+    color: #fff;
+    font-size: 25px;
+     --global-font: "poppins-light";
+     font-weight: 700;
+
+}
+
+.lower-section p{
+     color:#CCCCCC; ;
+    font-size: 23px;
+     --global-font: "poppins-light";
+     font-weight: 600;
+     padding-bottom: 0px;
+
+}
+
+.lower-section span{
+    font-size: 18px;
+    /* max-width: 90%; */
+}
+
+.card:hover{
+    transform: scale(1.2);
+    
+}
+
+.for-mobile{
+    display: none;
+}
 
 
 
@@ -422,6 +524,14 @@ body::before{
 @media screen and (max-width:992px) {
     .hero-section{
         margin-top: 15%;
+    }
+
+    .for-mobile{
+        display: none;
+    }
+
+    .card{
+        margin-top: 20px;
     }
     
 }
