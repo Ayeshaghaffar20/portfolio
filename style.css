@@ -441,7 +441,7 @@ body::before{
     backdrop-filter: blur(5px);
     border-radius: 15px;
     /* margin-top: 15%; */
-    transition: 0.5s;
+    transition: 0.5s ease;
     margin-top: 10%;
      box-shadow: 0px 0px 10px 5px rgba(128, 128, 128, 0.5);
      z-index: 1;
@@ -516,6 +516,63 @@ body::before{
 
 .for-mobile{
     display: none;
+}
+
+footer{
+    background-color: #666;
+    margin-top: 8%;
+      padding-bottom: 3rem;
+      padding-top: 3rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    
+  
+    
+}
+
+.contact h2{
+     --global-font: "poppins-light";
+     font-size: 40px;
+    font-weight: 500;
+    color: #fff;
+    
+}
+
+.contact img{
+    width: 60px;
+    height: 60px;
+
+}
+
+.last-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 2rem;
+    gap: 10px;
+}
+
+.last-section p{
+    font-size: 20px;
+    font-weight: 400;
+    --global-font: "poppins-light";
+    color: #fff;
+
+
+}
+
+.last-section a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
 }
 
 
