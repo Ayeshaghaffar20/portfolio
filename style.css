@@ -86,6 +86,7 @@ body::before{
 }
 
 .left-section{
+    margin-top: 10%;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -95,7 +96,7 @@ body::before{
 }
 
 .left-section h1{
-    font-size: 55px;
+    font-size: 52px;
     font-family: "poppins-light";
     font-weight: 700;
 }
@@ -362,6 +363,11 @@ body::before{
         100% { width: 60%; }
     }
 
+
+.ex-cards{
+    margin-top: 10%;
+}
+
 .education-section{
     margin-top: 10%;
     display: flex;
@@ -370,8 +376,8 @@ body::before{
     padding-bottom: 3rem;
 }  
 
-.education-section h2{
-    font-size: 35px;
+.education-section h1{
+    font-size: 40px;
     font-weight: 500;
     color: #fff;
     font-family: "poppins-light";
@@ -420,14 +426,16 @@ body::before{
     } */
 
  .ex{
-    --global-font: "poppins-light";
-    font-weight: 500;
+    font-family: "poppins-light";
     font-size: 40px;
+    font-weight: 500;
     color: #fff;
     margin-bottom: 20px;
 
 
  }   
+
+
 
     .card{
     height: 450px;
@@ -471,7 +479,7 @@ body::before{
 }
 
 .upper-section h3{
-    --global-font: "poppins-light";
+    font-family: "poppins-light";
     font-size: 30px;
     font-weight: 600;
     color:#CCCCCC; ;
@@ -518,10 +526,99 @@ body::before{
     display: none;
 }
 
+
+.projects::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#f00,#f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+.project-section::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(#2196f3,#e91363);
+   clip-path: circle(20% at 10% 20%);
+    z-index: -2;
+}
+
+.projects{
+    margin-top: 10%;
+}
+
+.project-heading{
+     font-family: "poppins-light";
+     text-align: center;
+    font-size: 50px;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 20px;
+
+}
+
+.p-card{
+        position: relative;
+    width: 100%;
+    height: 400px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border-top:1px solid rgba(255, 255, 255, 0.5) ;
+    border-left:1px solid rgba(255, 255, 255, 0.5) ;
+    background: rgba(255, 255, 255, 0.1) ;
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    margin-top: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.p-card img{
+    width: 100px;
+    height: 50px;
+}
+
+.p-card h3{
+     font-family: "poppins-light";
+    font-size: 25px;
+    font-weight: 500;
+    color: #CCCCCC;
+}
+
+.p-card p{
+      font-family: "poppins-light";
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    max-width: 85%;
+
+}
+
+.p-card a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #4d001f;
+    padding: 8px 30px;
+    text-align: center;
+    border-radius: 25px;
+}
+
 footer{
-    background-color: #666;
-    margin-top: 8%;
-      padding-bottom: 3rem;
+   background: linear-gradient(to right, #001f4d, #4d001f);
+     border-top-left-radius: 125px;
+     margin-top: 15%;
+      padding-bottom: 2rem;
       padding-top: 3rem;
 }
 
@@ -634,5 +731,30 @@ footer{
         font-size: 28px;
         text-align: center;
     }
+
+    footer{
+        margin-top: 15%;
+    }
+
+    .contact h2{
+        font-size: 30px;
+    }
+
+    .contact img{
+        width: 50px;
+        height: 50px;
+        
+    }
+
+    
+.last-section p{
+    font-size: 18px;
+    
+
+
 }
+
+}
+
+
 
