@@ -290,6 +290,46 @@ body::before{
     justify-content: space-around;
     align-items: center;
 }
+.second-section{
+    margin-top: 15%;
+}
+.code-img img{
+    width: 100%;
+}
+
+.skill-heading{
+    font-size: 40px;
+    font-weight: 500;
+    font-family: "poppins-light";
+    color: #fff;
+
+}
+
+.icons-list{
+    padding-left: 0;
+    list-style: none;
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 0;
+    margin-top: 0;
+    text-align: center;
+}
+
+.Software-skill{
+    display: inline-block;
+    margin-right: 2 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.Software-skill p{
+    font-size: 12px;
+}
+
+.Software-skill:hover{
+    color: purple;
+}
+
 .skills-bar{
     display: flex;
     flex-direction: column;
@@ -565,14 +605,17 @@ body::before{
 }
 
 .p-card{
-        position: relative;
+     /* position: relative; */
     width: 100%;
-    height: 400px;
+    height: 705px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
     overflow: hidden;
     border-top:1px solid rgba(255, 255, 255, 0.5) ;
     border-left:1px solid rgba(255, 255, 255, 0.5) ;
-    background: rgba(255, 255, 255, 0.1) ;
+    background-image:url('assets/images/screencapture-ayeshaghaffar20-github-io-Hackhathon-2024-05-03-18_17_11.png')  ;
+     background-size: cover; /* Cover the entire space of the card */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; 
     backdrop-filter: blur(5px);
     border-radius: 15px;
     margin-top: 15%;
@@ -585,6 +628,42 @@ body::before{
 
 
 .p-card img{
+    object-fit: cover;
+    vertical-align: middle;
+    display: inline-block;
+    /* height: 705px; */
+    width: 100%;
+    /* height: 100%; */
+    margin-bottom: 0%;
+   
+}
+.p-card:hover{
+     animation: moveUp 8s linear infinite;
+
+     background-position: top bottom;
+}
+.p-card:hover img{
+     animation: moveUp 8s linear infinite;
+}
+.back-img{
+    background-image: url('assets/images/screencapture-ayeshaghaffar20-github-io-Hackhathon-2024-05-03-18_17_11.png') ;
+    width: 100%;
+    background-position: top ;
+}
+@keyframes moveUp {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+    200% { /* Add another keyframe at 200% */
+        transform: translateY(0); /* Set it back to initial position */
+    }
+}
+
+
+/* .p-card img{
     width: 100px;
     height: 50px;
 }
@@ -612,7 +691,7 @@ body::before{
     padding: 8px 30px;
     text-align: center;
     border-radius: 25px;
-}
+} */
 
 footer{
    background: linear-gradient(to right, #001f4d, #4d001f);
