@@ -567,7 +567,7 @@ body::before{
 }
 
 
-.projects::before{
+/* .projects::before{
     content: '';
     position: absolute;
     width: 100%;
@@ -588,7 +588,7 @@ body::before{
     background: linear-gradient(#2196f3,#e91363);
    clip-path: circle(20% at 10% 20%);
     z-index: -2;
-}
+} */
 
 .projects{
     margin-top: 10%;
@@ -596,7 +596,7 @@ body::before{
 
 .project-heading{
      font-family: "poppins-light";
-     text-align: center;
+     /* text-align: center; */
     font-size: 50px;
     font-weight: 500;
     color: #fff;
@@ -604,8 +604,50 @@ body::before{
 
 }
 
-.p-card{
-     /* position: relative; */
+.image-container .box{
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background: #000;
+    background-position: top;
+    transition: ease-in-out 8s;
+    margin-top: 5rem;
+    border-radius: 10px;
+    border: 10px solid #fff;
+    
+  
+}
+
+
+.image-container .box1{
+    background-image: url(assets/images/screencapture-ayeshaghaffar20-github-io-Hackhathon-2024-05-03-18_17_11.png);
+    background-size: cover;
+}
+
+.image-container .box2{
+    background-image: url(assets/images/screencapture-ayeshaghaffar20-github-io-Real-estate-2024-05-03-18_18_11.png);
+    background-size: cover;
+}
+
+.image-container .box3{
+    background-image: url(assets/images/screencapture-ayeshaghaffar20-github-io-figma-file-2024-05-03-18_18_49.png);
+    background-size: cover;
+}
+
+.image-container .box4{
+    background-image: url(assets/images/screencapture-ayeshaghaffar20-github-io-bootstrap-2024-05-03-19_01_03.png);
+    background-size: cover;
+}
+
+
+
+.image-container .box:hover{
+    background-position: bottom;
+
+}
+
+/* .p-card{
+     position: relative;
     width: 100%;
     height: 705px;
     box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
@@ -621,16 +663,16 @@ body::before{
     justify-content: center;
     flex-direction: column;
     gap: 20px;
-}
+} */
 
 
-.p-card img{
+/* .p-card img{
     object-fit: cover;
     vertical-align: middle;
     display: inline-block;
-    /* height: 705px; */
+    height: 705px;
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     margin-bottom: 0%;
        
    
@@ -638,8 +680,8 @@ body::before{
 
 .p-card:hover img{
      animation: moveUp 8s linear infinite;
-}
-
+} */
+/* 
 @keyframes moveUp {
     0% {
         transform: translateY(0);
@@ -647,10 +689,10 @@ body::before{
     100% {
         transform: translateY(-100%);
     }
-    200% { /* Add another keyframe at 200% */
-        transform: translateY(0); /* Set it back to initial position */
+    200% { dd another keyframe at 200% ;
+        transform: translateY(0); Set it back to initial position 
     }
-}
+} */
 
 
 /* .p-card img{
