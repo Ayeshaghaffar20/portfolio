@@ -305,6 +305,14 @@ body::before{
 
 }
 
+.style-para{
+     font-size: 25px;
+    font-weight: 100;
+    font-family: "poppins-light";
+    color: #fff;
+    text-align: justify;
+}
+
 .icons-list{
     padding-left: 0;
     list-style: none;
